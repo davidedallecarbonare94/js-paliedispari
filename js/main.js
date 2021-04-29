@@ -21,24 +21,23 @@ function pcRandomNumber(min, max) {
     var pcChoose = Math.floor(Math.random() * (max - min));
     return pcChoose;
 }
-min(1)
-max(5)
+var pcNumber = pcRandomNumber(1, 5)
 console.log(pcNumber);
-//Sommiamo i due numeri
-function sum(myNumber, pcNumber) {
-    var result = myNumber + pcNumber;
+ //Sommiamo i due numeri
+function sum(myNumber, pcChooseNumber) {
+    var result = myNumber + pcChooseNumber;
     return result
 }
-myNumber(userNumber);
-pcNumber()
-console.log(result);
-//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-function isThisEven() {
-    if (sum % 2 === 0) {
-        console.log("even");
-    } else {
-        console.log("odd");
-    }
-}
+var somma = sum(userNumber, pcNumber)
+console.log(somma);
 
+//Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+function isThisEven(odd, even) {
+    if (somma % 2 === 0) {
+        console.log(odd);
+    } else {
+        console.log(even);;
+    }
+} 
+isThisEven("Ha vinto pari!", "Ha vinto dispari!")
 //Dichiariamo chi ha vinto.
